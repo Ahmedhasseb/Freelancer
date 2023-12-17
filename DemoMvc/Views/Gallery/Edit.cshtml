@@ -1,0 +1,45 @@
+﻿@model GalleryViewModel;
+
+@inject IUnitOfWork unite
+@{
+    var department = new SelectList(await unite.HairArtist.GetAll(),"Id", "name");
+}
+
+@{
+    ViewData["Title"] = "Edit";
+   
+}
+<h1>Edit</h1>
+<br />
+<br />
+
+
+
+<div class="container">
+    <form asp-action="Edit" enctype="multipart/form-data">
+        <div class="form-group">
+            <label class="col-form-label" asp-for="Decsription"></label>
+            <input class="form-control" asp-for="Decsription" />
+
+        </div>
+        <div class="form-group">
+            <label class="col-form-label">HairArtist</label>
+            <select class="form-control" asp-for=HairArtistId asp-items="@department">
+                <option value="@null">---Select HairArtist----</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="col-form-label" asp-for="Image">Image</label>
+            <input class="form-control" asp-for="Image" />
+        </div>
+        <div class="d-flex justify-content-between">
+            <div>
+
+                <input class="btn btn-primary ms-2" type="submit" value="Sava Changes" />
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+            </div>
+            <a class="btn btn-outline-info" asp-action="Index">Back To Home</a>
+        </div>
+    </form>
+</div>
+

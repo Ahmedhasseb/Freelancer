@@ -1,0 +1,34 @@
+﻿
+@model GalleryViewModel;
+@inject IUnitOfWork unite
+@{
+    var department = new SelectList(await unite.HairArtist.GetAll(), "Id", "name");
+}
+@{
+    ViewData["Title"] = "Create";
+    
+}
+
+<h1>Create</h1>
+<div class="container">
+
+    <form asp-action="Create" enctype="multipart/form-data">
+        <div class="form-group">
+            <label class="col-form-label" asp-for="Decsription"></label>
+            <input class="form-control" asp-for="Decsription" />
+
+        </div>
+        <div class="form-group">
+            <label class="col-form-label" asp-for="Image">Image</label>
+            <input class="form-control" asp-for="Image" />
+        </div>
+        <div class="form-group">
+            <label class="col-form-label">Department</label>
+            <select class="form-control" asp-for=HairArtistId asp-items="@department">
+                <option value="@null">---Select HairArtist----</option>
+            </select>
+        </div>
+        <input class="btn btn-outline-primary" value="Add" type="submit" />
+    </form>
+</div>
+

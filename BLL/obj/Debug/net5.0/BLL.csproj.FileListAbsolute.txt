@@ -1,0 +1,15 @@
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\BLL\bin\Debug\net5.0\BLL.deps.json
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\BLL\bin\Debug\net5.0\BLL.dll
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\BLL\bin\Debug\net5.0\BLL.pdb
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\BLL\bin\Debug\net5.0\DAL.dll
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\BLL\bin\Debug\net5.0\DAL.pdb
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\BLL\obj\Debug\net5.0\BLL.csproj.AssemblyReference.cache
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\BLL\obj\Debug\net5.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\BLL\obj\Debug\net5.0\BLL.AssemblyInfoInputs.cache
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\BLL\obj\Debug\net5.0\BLL.AssemblyInfo.cs
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\BLL\obj\Debug\net5.0\BLL.csproj.CoreCompileInputs.cache
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\BLL\obj\Debug\net5.0\BLL.csproj.CopyComplete
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\BLL\obj\Debug\net5.0\BLL.dll
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\BLL\obj\Debug\net5.0\refint\BLL.dll
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\BLL\obj\Debug\net5.0\BLL.pdb
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\BLL\obj\Debug\net5.0\ref\BLL.dll
