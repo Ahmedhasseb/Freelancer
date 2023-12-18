@@ -66,17 +66,21 @@ namespace DemoMvc.Controllers
         // POST: HairArtistController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(HairArtistViewModel HairArtistVM)
+        public async Task<IActionResult> Create(HairArtistViewModel ClientVM)
         {
             if (ModelState.IsValid)
             {
-                HairArtistVM.ImageName = DocumentSettings.uploadFile(HairArtistVM.Image, "image");
-                var empmapper = _mapper.Map<HairArtistViewModel, HairArtist>(HairArtistVM);
+                if (ClientVM.Image==null)
+                {
+                    return View(ClientVM);
+                }
+                ClientVM.ImageName = DocumentSettings.uploadFile(ClientVM.Image, "image");
+                var empmapper = _mapper.Map<HairArtistViewModel, HairArtist>(ClientVM);
                 await _unitOfWork.HairArtist.Add(empmapper);
                 await _unitOfWork.Complete();
                 return RedirectToAction(nameof(Index));
             }
-            return View(HairArtistVM);
+            return View(ClientVM);
         }
 
         // GET: HairArtistController/Edit/5
@@ -98,6 +102,7 @@ namespace DemoMvc.Controllers
             {
                 try
                 {
+                    HairArtistVM.ImageName = DocumentSettings.uploadFile(HairArtistVM.Image, "image");
                     var empmaper = _mapper.Map<HairArtistViewModel, HairArtist>(HairArtistVM);
                     _unitOfWork.HairArtist.Update(empmaper);
                     await _unitOfWork.Complete();

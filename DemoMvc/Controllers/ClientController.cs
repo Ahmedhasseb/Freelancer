@@ -69,7 +69,7 @@ namespace DemoMvc.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ClientViewModel ClientVM)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 ClientVM.ImageName = DocumentSettings.uploadFile(ClientVM.Image, "image");
                 var empmapper = _mapper.Map<ClientViewModel, Client>(ClientVM);
@@ -95,7 +95,7 @@ namespace DemoMvc.Controllers
             {
                 return BadRequest();
             }
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 try
                 {

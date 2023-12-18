@@ -450,9 +450,9 @@ G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\DemoMvc\obj\Debug\net5.0\Razor\Views\Gallery
 G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\DemoMvc\obj\Debug\net5.0\Razor\Views\Client\Index.cshtml.g.cs
 G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\DemoMvc\obj\Debug\net5.0\Razor\Views\Client\Edit.cshtml.g.cs
 G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\DemoMvc\obj\Debug\net5.0\Razor\Views\Client\Delete.cshtml.g.cs
-G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\DemoMvc\obj\Debug\net5.0\Razor\Views\Client\Create.cshtml.g.cs
 G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\DemoMvc\obj\Debug\net5.0\Razor\Views\Client\Details.cshtml.g.cs
 G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\DemoMvc\obj\Debug\net5.0\Razor\Views\Gallery\Edit.cshtml.g.cs
 G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\DemoMvc\obj\Debug\net5.0\Razor\Views\Gallery\Delete.cshtml.g.cs
 G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\DemoMvc\obj\Debug\net5.0\Razor\Views\Gallery\Create.cshtml.g.cs
 G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\DemoMvc\obj\Debug\net5.0\Razor\Views\HairArtist\Index.cshtml.g.cs
+G:\ITI\BackEnd\MVCRoute\MVC\DemoMvc\DemoMvc\obj\Debug\net5.0\Razor\Views\Client\Create.cshtml.g.cs

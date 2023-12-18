@@ -6,15 +6,15 @@ namespace DemoMvc.Helpers
 {
     public static class DocumentSettings
     {
-        public static string uploadFile(IFormFile file,string folderName)
+        public static string uploadFile(IFormFile file, string folderName)
         {
-            string FolderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\File\\",folderName);
+            string FolderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\File\\", folderName);
 
-            string fileName =$"{Guid.NewGuid()}{file.FileName}";
+            string fileName = $"{Guid.NewGuid()}{file.FileName}";
 
             string path = Path.Combine(FolderPath, fileName);
 
-            using var fs=new FileStream(path, FileMode.Create);
+            using var fs = new FileStream(path, FileMode.Create);
             file.CopyTo(fs);
             return fileName;
         }

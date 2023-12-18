@@ -6,6 +6,7 @@ namespace DemoMvc.Models
     public class GalleryViewModel
     {
         public int Id { get; set; }
+
         public string Decsription { get; set; }
         public IFormFile Image { get; set; }
         public string ImageName { get; set; }

@@ -12,7 +12,7 @@ namespace DAL.Moduls
         public string name { get; set; }
 
         public string ImageName { get; set; }
-        public virtual ICollection<Client> Clients { get; set; } = new HashSet<Client>();
-        public virtual ICollection<Gallery> Gallerys { get; set; } = new HashSet<Gallery>();
+        public virtual ICollection<Client> Clients { get; set; } 
+        public virtual ICollection<Gallery> Gallerys { get; set; } 
     }
 }

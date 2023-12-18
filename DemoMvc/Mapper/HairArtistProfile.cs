@@ -8,7 +8,8 @@ namespace DemoMvc.Mapper
     {
         public HairArtistProfile()
         {
-            CreateMap<HairArtistViewModel, HairArtist>().ReverseMap();     
+            CreateMap<HairArtistViewModel, HairArtist>().ForMember(item => item.name, opt => opt.MapFrom(item => item.name))
+                .ForMember(item => item.ImageName, opt => opt.MapFrom(item => item.ImageName)).ReverseMap();     
         }
     }
 }
